@@ -14,6 +14,4 @@ use App\Http\Controllers\Guest\PageController as PageController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [PageController::class, 'index'])->name('home');
