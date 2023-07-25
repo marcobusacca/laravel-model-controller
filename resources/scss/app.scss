@@ -9,3 +9,24 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
+
+// MAIN
+main {
+    .card {
+        .card-img-top {
+            height: 60%;
+        }
+
+        .card-header {
+            height: 10%;
+        }
+
+        .card-body {
+            height: 30%;
+
+            &>* {
+                height: calc(100% / 5);
+            }
+        }
+    }
+}
