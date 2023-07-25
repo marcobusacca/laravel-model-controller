@@ -15,7 +15,12 @@ class PageController extends Controller
 
     public function show($id){
         $comics = Comic::all();
-        $comic = $comics[$id];
-        return view('comics.show', compact('comic'));
+        if ($id >= 0 && $id < count($comics)){
+            $comic = $comics[$id];
+            return view('comics.show', compact('comic'));
+        } else{
+            abort('404');
+        }
     }
 }
+
