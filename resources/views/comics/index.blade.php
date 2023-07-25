@@ -7,7 +7,7 @@
                 <div class="col-12 col-md-6 col-lg-4 my-5">
                     <div class="card h-100">
                         <!-- Card Image -->
-                        <img src="{{ Vite::asset('resources/img/')}}{{$comic->cover_image}}" alt="cover-image" class="card-img-top">
+                        <img src="{{ Vite::asset('resources/img/')}}{{$comic->cover_image}}" alt="cover-image" class="card-img-top border border-5">
                         <!-- Card Header -->
                         <div class="card-header d-flex justify-content-center align-items-center text-center">
                             <!-- Title -->
