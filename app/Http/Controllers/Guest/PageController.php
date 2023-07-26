@@ -19,13 +19,14 @@ class PageController extends Controller
 
         $comics = Comic::all();
 
-        if ($id >= 0 && $id <= count($comics)){
+        $comic = Comic::find($id);
 
-            $comic = Comic::find($id);
+        if ($comic){
 
             return view('comics.show', compact('comic'));
 
         } else{
+            
             abort('404');
         }
     }
