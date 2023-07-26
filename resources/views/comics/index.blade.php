@@ -4,7 +4,7 @@
     <div class="index-page">
         <div class="container py-5">
             <div class="row">
-                @forelse ($comics as $id => $comic)
+                @forelse ($comics as $comic)
                     <div class="col-12 col-md-6 col-lg-4 my-5">
                         <div class="card h-100">
                             <!-- Card Image -->
@@ -38,7 +38,7 @@
                                 </div>
                                 <!-- More Info Button -->
                                 <div>
-                                    <a href="{{ Route('show', $id) }}" class="btn btn-primary">More Info</a>
+                                    <a href="{{ Route('show', $comic->id) }}" class="btn btn-primary">More Info</a>
                                 </div>
                             </div>
                         </div>

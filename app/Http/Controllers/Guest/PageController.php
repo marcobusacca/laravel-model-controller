@@ -21,7 +21,7 @@ class PageController extends Controller
 
         if ($id >= 0 && $id < count($comics)){
 
-            $comic = $comics[$id];
+            $comic = Comic::find($id);
 
             return view('comics.show', compact('comic'));
 
