@@ -19,7 +19,7 @@ class PageController extends Controller
 
         $comics = Comic::all();
 
-        if ($id >= 0 && $id < count($comics)){
+        if ($id >= 0 && $id <= count($comics)){
 
             $comic = Comic::find($id);
 
